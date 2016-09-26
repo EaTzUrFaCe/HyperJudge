@@ -1,0 +1,5 @@
+RewriteEngine On
+
+<IfModule mod_rewrite.c>
+	RewriteRule ^((?!index\.php).+) /?uri=$1 [NC,L,QSA]
+</IfModule>

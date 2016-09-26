@@ -1,0 +1,29 @@
+--- apache2.conf	2016-09-26 11:46:37.219852100 -0500
++++ apache2.conf	2016-09-26 11:47:23.968240800 -0500
+@@ -152,7 +152,7 @@
+ # access here, or in any related virtual host.
+ <Directory />
+ 	Options FollowSymLinks
+-	AllowOverride None
++	AllowOverride All
+ 	Require all denied
+ </Directory>
+ 
+@@ -163,7 +163,7 @@
+ 
+ <Directory /var/www/>
+ 	Options Indexes FollowSymLinks
+-	AllowOverride None
++	AllowOverride All
+ 	Require all granted
+ </Directory>
+ 
+@@ -218,4 +218,8 @@
+ # Include the virtual host configurations:
+ IncludeOptional sites-enabled/*.conf
+ 
++AcceptFilter http none
++
++Servername localhost
++
+ # vim: syntax=apache ts=4 sw=4 sts=4 sr noet

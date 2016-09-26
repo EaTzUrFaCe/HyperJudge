@@ -1,0 +1,14 @@
+{
+    "name": "cpcguy/echojudge",
+    "description": "Custom CCS Software Created by Matt Hermes",
+    "require": {
+        "twig/twig": "^1.25",
+        "j4mie/idiorm": "^1.5"
+    },
+    "authors": [
+        {
+            "name": "Matt Hermes",
+            "email": "matthew.hermes@utdallas.edu"
+        }
+    ]
+}
