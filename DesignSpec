@@ -1,0 +1,62 @@
+All
+ -> Login (If not logged in)
+  -> Username \
+  -> Password  > Hash
+ -> Logout (If logged in)
+ -> Scoreboard
+ 
+Team
+ -> Overview
+  -> Submissions
+  -> Clarifications
+  -> Request Clarifications
+  -> Documentation
+   -> Team Manual
+
+Jury
+ -> Documentation
+  -> Team Manual
+  -> Judge Manual
+ -> Clarifications
+ -> Problems	 
+ -> Statistics
+ -> Submissions
+ 
+Admin (Include All from Jury)
+ -> Documentation
+  -> Team Manual
+  -> Judge Manual
+  -> Administrator Manual
+ -> Contests
+  -> LADE
+  -> Current Contests
+   -> Activate, Start, Freeze, End, Unfreeze, Deactivate (Show and Trigger)
+ -> Executables
+  -> LADE
+   -> Name, Type, Script Contents, Associated Language, Upload/Download Archive
+ -> Judgehosts
+  -> LAD
+ -> Languages
+  -> List
+   -> Name, Type, Script Contents, Associated Executable, Upload/Download Archive
+  -> ADE
+ -> Users
+  -> LADE
+ -> Categories
+  -> LADE
+ -> Configuration
+  -> View, Edit
+ -> Config Checker
+  -> View
+ -> Manage Passwords
+  -> Random Password for (Admin|Jury|Contestants|Accounts w/o Passwords)
+ -> Refresh Scoreboard Cache
+  -> Confirm
+ -> Activity Log
+  -> Login/out
+  -> User ADE
+  -> Team ADE
+  -> Problem ADE
+  -> Contest ADE
+  -> Test Case ADE
+ -> PhPMyAdmin
