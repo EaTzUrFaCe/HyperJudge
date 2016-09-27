@@ -1,0 +1,67 @@
+User
+ - ID
+ - Name
+ - Type
+ - SessionID
+ - Password
+ 
+UserCategory
+ - ID
+ - UserID
+ - CategoryID
+ 
+Category
+ - ID
+ - Name
+ - Color
+ 
+Executable
+ - ID
+ - Name
+ - Script (Blob)
+ 
+Language
+ - ID
+ - Name
+ - Extensions
+ - Script (Blob)
+ - Executables
+ 
+Clarification
+ - ID
+ - Answer
+ - Question
+ - Sender
+ - Answerer
+
+Problem
+ - ID
+ - ProblemText
+ 
+ProblemCategory
+ - ID
+ - ProblemID
+ - CategoryID
+ 
+ProblemData
+ - ID
+ - ProblemID
+ - TestdataID
+ 
+Testdata
+ - ID
+ - Input
+ - Output
+ 
+Submission
+ - ID
+ - ProblemID
+ - Submitter
+ - Code
+ 
+Run
+ - ID
+ - SubmissionID
+ - Status
+ - Output
+ - Error

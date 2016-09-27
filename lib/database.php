@@ -1,10 +1,14 @@
 <?php
 
+use \ORM as _DB;
+
 class DB {
-	
+	public static function FindUserByID(int id) {
+		
+	}
 }
 
-ORM::configure(array(
+_DB::configure(array(
 	"connection_string" => "" . Config::Get("Database.Host") . "" . Config::Get("Database.Name"),
 	"username" => Config::Get("Database.Username"),
 	"password" => Config::Get("Database.Password"),

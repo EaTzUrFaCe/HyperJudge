@@ -2,9 +2,7 @@
 
 class Session {
 
-	 public $_vars = array();
-
-	public function Get($var, $default='', $erase=false) {
+	public static function Get($var, $default='', $erase=false) {
 		if (isset($_SESSION[$var])) {
 			$tmp = $_SESSION[$var];
 			if ($erase) unset($_SESSION[$var]);
@@ -14,7 +12,7 @@ class Session {
 		}
 	}
 
-	public function Set($var, $value) {
+	public static function Set($var, $value) {
 		$_SESSION[$var] = $value;
 	}
 }
