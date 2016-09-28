@@ -5,27 +5,17 @@ User
  - SessionID
  - Password
  
-UserCategory
- - ID
- - UserID
- - CategoryID
- 
 Category
  - ID
  - Name
  - Color
  
-Executable
- - ID
- - Name
- - Script (Blob)
- 
 Language
  - ID
  - Name
  - Extensions
- - Script (Blob)
- - Executables
+ - Compile (Blob)
+ - Run (Blob)
  
 Clarification
  - ID
@@ -36,20 +26,12 @@ Clarification
 
 Problem
  - ID
- - ProblemText
- 
-ProblemCategory
- - ID
- - ProblemID
  - CategoryID
- 
-ProblemData
- - ID
- - ProblemID
- - TestdataID
+ - ProblemText
  
 Testdata
  - ID
+ - ProblemID
  - Input
  - Output
  
