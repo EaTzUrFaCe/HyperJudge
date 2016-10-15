@@ -1,0 +1,9 @@
+Auth:
+ Encryption:
+  Cost: 20
+
+Database:
+ Host: 'localhost'
+ Name: 'hyperjudge'
+ Username: 'root'
+ Password: '041998'
