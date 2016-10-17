@@ -7,3 +7,6 @@ Database:
  Name: 'hyperjudge'
  Username: 'root'
  Password: '041998'
+
+Runtime:
+ Debug: true

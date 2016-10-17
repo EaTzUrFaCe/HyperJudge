@@ -20,3 +20,5 @@ echo ("<br>");
 echo ("Last Path: " . Session::Get('path', 'unknown', true));
 echo ("<br>");
 Session::Set('path', $path);
+
+Template::Require('asdf.ppp', 'jss');
