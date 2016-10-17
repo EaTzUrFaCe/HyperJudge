@@ -66,19 +66,19 @@ CREATE TABLE `Submission` (
 	PRIMARY KEY (`id`)
 );
 
-ALTER TABLE `User` ADD CONSTRAINT `User_fk0` FOREIGN KEY (`category`) REFERENCES `Category`(`id`);
+ALTER TABLE `User` ADD CONSTRAINT `User_Category` FOREIGN KEY (`category`) REFERENCES `Category`(`id`);
 
-ALTER TABLE `Clarification` ADD CONSTRAINT `Clarification_fk0` FOREIGN KEY (`sender`) REFERENCES `User`(`id`);
+ALTER TABLE `Clarification` ADD CONSTRAINT `Clarification_Sender` FOREIGN KEY (`sender`) REFERENCES `User`(`id`);
 
-ALTER TABLE `Clarification` ADD CONSTRAINT `Clarification_fk1` FOREIGN KEY (`answerer`) REFERENCES `User`(`id`);
+ALTER TABLE `Clarification` ADD CONSTRAINT `Clarification_Answerer` FOREIGN KEY (`answerer`) REFERENCES `User`(`id`);
 
-ALTER TABLE `Problem` ADD CONSTRAINT `Problem_fk0` FOREIGN KEY (`categoryid`) REFERENCES `Category`(`id`);
+ALTER TABLE `Problem` ADD CONSTRAINT `Problem_Category` FOREIGN KEY (`categoryid`) REFERENCES `Category`(`id`);
 
-ALTER TABLE `ProblemData` ADD CONSTRAINT `ProblemData_fk0` FOREIGN KEY (`problemid`) REFERENCES `Problem`(`id`);
+ALTER TABLE `ProblemData` ADD CONSTRAINT `ProblemData_Problem` FOREIGN KEY (`problemid`) REFERENCES `Problem`(`id`);
 
-ALTER TABLE `Run` ADD CONSTRAINT `Run_fk0` FOREIGN KEY (`submissionid`) REFERENCES `Submission`(`id`);
+ALTER TABLE `Run` ADD CONSTRAINT `Run_Submission` FOREIGN KEY (`submissionid`) REFERENCES `Submission`(`id`);
 
-ALTER TABLE `Submission` ADD CONSTRAINT `Submission_fk0` FOREIGN KEY (`problemid`) REFERENCES `Problem`(`id`);
+ALTER TABLE `Submission` ADD CONSTRAINT `Submission_Problem` FOREIGN KEY (`problemid`) REFERENCES `Problem`(`id`);
 
-ALTER TABLE `Submission` ADD CONSTRAINT `Submission_fk1` FOREIGN KEY (`sender`) REFERENCES `User`(`id`);
+ALTER TABLE `Submission` ADD CONSTRAINT `Submission_User` FOREIGN KEY (`sender`) REFERENCES `User`(`id`);
 

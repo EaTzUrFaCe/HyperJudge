@@ -1,9 +1,10 @@
 {
-    "name": "cpcguy/echojudge",
+    "name": "hypercode/hyperjudge",
     "description": "Custom CCS Software Created by Matt Hermes",
     "require": {
         "twig/twig": "^1.25",
-        "j4mie/idiorm": "^1.5"
+        "j4mie/idiorm": "^1.5",
+        "symfony/yaml": "^3.1"
     },
     "authors": [
         {
