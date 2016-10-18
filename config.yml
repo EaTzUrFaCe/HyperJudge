@@ -8,5 +8,5 @@ Database:
  Username: 'root'
  Password: '041998'
 
-Runtime:
+Environment:
  Debug: true

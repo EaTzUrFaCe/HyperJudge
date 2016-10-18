@@ -4,8 +4,8 @@ require_once ("lib/auth.php");
 require_once ("lib/config.php");
 require_once ("lib/database.php");
 require_once ("lib/logging.php");
+require_once ("lib/page.php");
 require_once ("lib/session.php");
-require_once ("lib/template.php");
 require_once ("lib/vars.php");
 $path = Vars::Get("uri", "", true);
 if ((($file = realpath($path)) !== false) && (strpos($path, ".php") === false)) {
@@ -14,12 +14,8 @@ if ((($file = realpath($path)) !== false) && (strpos($path, ".php") === false)) 
 } elseif (($file = realpath($path . ".php")) !== false) {
     require_once ($file);
 } else {
-    echo ("File not found.");
+    $path = "public/scoreboard";
+    require_once ($path . ".php");
 }
-echo ("Current Path: " . $path);
-echo ("<br>");
-echo ("Last Path: " . Session::Get('path', 'unknown', true));
-echo ("<br>");
-Session::Set('path', $path);
-
-Template::Require('asdf.ppp', 'jss');
+Page::SetSourceFile($path);
+Page::Render();

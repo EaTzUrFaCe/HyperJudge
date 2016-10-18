@@ -1,10 +1,10 @@
 <?php
 class Auth {
     public static function Login($username, $password) {
-        $user = self::_GetUser($username);
+        $user = DB::GetUserByUsername($username);
     }
     public static function Logout($hash) {
-        DB::Erase($hash);
+        Session::Set("User", null);
     }
     public static function ValidateSession() {
         $sid = Session::Get("SessionID");
